@@ -1,0 +1,59 @@
+<body>
+  <h1 class="megaTitle">YOUR HOME homeName</h1>
+
+  <button class="createbutton" id="createTaskBtn">
+      <img class="createimage" src="images/plus-button.png" alt="Create task">
+      <p style="text-align: center; font-size: 30px; margin-top: 0px;">Create new task</p>
+  </button>
+
+  <h2>Assigned Tasks</h2>
+
+  <div class="taskBox">
+    <div class="taskPlank">
+      <img class="taskImage" src="images/task.png" alt="Task">
+      <p style="padding-left: 15px;">Wash the dishes</p>
+      <input type="checkbox" name="isTaskDone" id="isTaskDone">
+    </div>
+    <div class="taskPlank">
+      <img class="taskImage" src="images/task.png" alt="Task">
+      <p style="padding-left: 15px;">Play with a dog</p>
+      <input type="checkbox" name="isTaskDone" id="isTaskDone">
+    </div>
+    <div class="taskPlank">
+      <img class="taskImage" src="images/task.png" alt="Task">
+      <p style="padding-left: 15px;">Make dinner</p>
+      <input type="checkbox" name="isTaskDone" id="isTaskDone">
+    </div>
+    <div class="taskPlank">
+      <img class="taskImage" src="images/task.png" alt="Task">
+      <p style="padding-left: 15px;">Clean the bathroom</p>
+      <input type="checkbox"  name="isTaskDone" id="isTaskDone">
+    </div>
+  </div>
+</body>
+
+<div class="popupFormOverlay" id="popupForm">
+  <div class="popupFormContent">
+    <h2>Create New Task</h2>
+    <form id="taskForm">
+      <label for="taskName">Task Name:</label><br>
+      <input type="text" id="taskName" name="taskName" required><br><br>
+
+      <label for="assignee">Assign To:</label><br>
+      <select id="assignee" name="assignee">
+        <option value="Simon">Simon</option>
+        <option value="Platon">Platon</option>
+        <option value="Amilia">Amilia</option>
+      </select><br><br>
+
+      <button type="submit">Create Task</button>
+      <button type="button" class="closeFormBtn">Cancel</button>
+    </form>
+  </div>
+</div>
+
+<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/popup.css">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/db.js"></script>
+<script src="js/home.js"></script>

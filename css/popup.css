@@ -1,0 +1,29 @@
+
+  
+.popupFormOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .popupFormContent {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    min-width: 300px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  }
+  .popupFormContent input, .popupFormContent select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
