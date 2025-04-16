@@ -81,9 +81,17 @@ button{
     padding: 0;
 }
 
+.taskBoxes {
+  padding: 2rem 2rem;
+}
+
+.taskContainer {
+  float: left;
+}
+
 .taskBox {
     width: 600px;
-    height: 400px;
+    height: fit-content;
     border: 2px solid black;
     display: flex;
     flex-direction: column;
@@ -92,6 +100,22 @@ button{
     box-sizing: border-box;
     background-color: white;
   }
+
+  .doneTaskContainer{
+    float: left;
+    margin-left: 20px;
+  }
+  .doneTaskBox {
+     width: 600px;
+     height: fit-content;
+     border: 2px solid black;
+     display: flex;
+     flex-direction: column;
+     overflow-y: auto;
+     padding-top: 0px;
+     box-sizing: border-box;
+     background-color: white;
+   }
   
   .taskPlank {
     width: 100%;
@@ -106,4 +130,8 @@ button{
     justify-content: flex-start; 
   }
   
-  
+  #taskBoxbtn{
+    margin-top: 20px;
+    width: 100%;
+    font-size: 30px;
+}

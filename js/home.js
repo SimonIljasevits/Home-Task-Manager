@@ -1,4 +1,9 @@
 $(document).ready(function() {
+  handleNewTaskCreating()
+
+  });
+
+  function handleNewTaskCreating(){
     $('#createTaskBtn').click(function() {
       $('#popupForm').fadeIn(200);  
     });
@@ -19,4 +24,11 @@ $(document).ready(function() {
       $('#popupForm').fadeOut(200);
       $('#taskForm')[0].reset(); 
     });
-  });
+  }
+
+  function handleTaskClearing(){
+    const doneTaskBox = $('.doneTaskBox')
+    $('.clearCompletedTasks').click(function(){
+      
+    })
+  }
