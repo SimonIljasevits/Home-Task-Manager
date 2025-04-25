@@ -2,17 +2,35 @@
     <h1 class="megaTitle">HOME TASK MANAGER</h1>
     <div class="horizontalParent">
         <div class="horizontalChild">
-            <button>Create Home</button>
+            <button id="createHomeBtn">Create Home</button>
             <input type="text" id="createHomeText" placeholder="New home name...">
         </div>
         <div class="horizontalChild">
-            <button>Join Home</button>
+            <button id="joinHomeBtn">Join Home</button>
             <input type="text" id="joinHomeText" placeholder="Home name...">
         </div>
     </div>
 </body>
 
+<div class="popupFormOverlay" id="popupForm">
+    <div class="popupFormContent">
+      <h2 id="formHeader">Join homeName</h2>
+      <form id="taskForm">
+        <label for="assignee">Join As:</label><br>
+        <select id="assignee" name="assignee">
+          <option value="Simon">Simon</option>
+          <option value="Platon">Platon</option>
+          <option value="Amilia">Amilia</option>
+        </select><br><br>
+  
+        <button type="submit">Join Home</button>
+        <button type="button" class="closeFormBtn">Cancel</button>
+      </form>
+    </div>
+  </div>
+
 <link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/popup.css">
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="js/db.js"></script>
 <script src="js/index.js"></script>
