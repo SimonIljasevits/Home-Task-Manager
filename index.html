@@ -12,10 +12,10 @@
     </div>
 </body>
 
-<div class="popupFormOverlay" id="popupForm">
+<div class="popupFormOverlay" id="joinPopupForm">
     <div class="popupFormContent">
-      <h2 id="formHeader">Join homeName</h2>
-      <form id="taskForm">
+      <h2 id="joinFormHeader">Join homeName</h2>
+      <form id="joinTaskForm">
         <label for="assignee">Join As:</label><br>
         <select id="assignee" name="assignee">
           <option value="Simon">Simon</option>
@@ -24,7 +24,24 @@
         </select><br><br>
   
         <button type="submit">Join Home</button>
-        <button type="button" class="closeFormBtn">Cancel</button>
+        <button type="button" class="closeJoinFormBtn">Cancel</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="popupFormOverlay" id="createPopupForm">
+    <div class="popupFormContent">
+      <h2 id="createFormHeader">Join homeName</h2>
+      <form id="createTaskForm">
+        <label for="assignee">Add People:</label>
+        <input type="text" class="memberNameText" placeholder="New member name..."><br>
+        <button id="addMemberButton" type="button">Add member</button>
+        <div class="memberList">
+        <p>Parent</p>
+        </div>
+  
+        <button type="submit">Create Home</button>
+        <button type="button" class="closeJoinFormBtn">Cancel</button>
       </form>
     </div>
   </div>

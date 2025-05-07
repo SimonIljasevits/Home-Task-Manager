@@ -1,5 +1,6 @@
 $(document).ready(function() {
     handleHomeJoining()
+    handleHomeCreating()
   
     });
 
@@ -7,17 +8,17 @@ let homeName = ""
 
 function handleHomeJoining(){
     $('#joinHomeBtn').click(function() {
-      $('#popupForm').fadeIn(200);  
+      $('#joinPopupForm').fadeIn(200);  
       homeName = $("#joinHomeText").val()
-      $("#formHeader").text("Join " + homeName)
+      $("#joinFormHeader").text("Join " + homeName)
     });
   
 
-    $('.closeFormBtn').click(function() {
-      $('#popupForm').fadeOut(200);  
+    $('.closeJoinFormBtn').click(function() {
+      $('#joinPopupForm').fadeOut(200);  
     });
 
-    $('#taskForm').submit(function(e) {
+    $('#joinTaskForm').submit(function(e) {
       e.preventDefault();
   
       const assignee = $('#assignee').val();
@@ -27,3 +28,31 @@ function handleHomeJoining(){
     });
   }
 
+  function handleHomeCreating(){
+    $('#createHomeBtn').click(function() {
+      $('#createPopupForm').fadeIn(200);  
+      homeName = $("#createHomeText").val()
+      $("#createFormHeader").text(homeName + " Create Form")
+    });
+
+    $('#addMemberButton').click(function(){
+      const memberName = $('.memberNameText').val();
+      $('.memberNameText').val("")
+      $('.memberList').append('<p>' + memberName + '</p>');
+    });
+  
+
+    $('.closeCreateFormBtn').click(function() {
+      $('#createPopupForm').fadeOut(200);  
+    });
+
+    $('#createTaskForm').submit(function(e) {
+      e.preventDefault();
+      
+      alert("You have succesfully created home with name: " + homeName)
+      window.location.href = "home.html"
+    });
+  }
+
+
+ 

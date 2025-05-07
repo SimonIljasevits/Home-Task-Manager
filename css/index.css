@@ -59,6 +59,18 @@ button{
   background-color: inherit;
   transition: transform .1s ease-out;
 }
+
+.memberList {
+  width: 200x;
+  height: fit-content;
+  border: 2px solid black;
+  flex-direction: column;
+  overflow-y: auto;
+  padding: 20px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  background-color: white;
+}
   
   
   
